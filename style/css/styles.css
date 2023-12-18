@@ -10,17 +10,24 @@ h1 {
   transition: 0.75s;
   z-index: 10;
 }
-.frog {
+.frog-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-top: 100px;
 }
-.btn-frog {
+.frog {
+  display: flex;
+  border: none;
+  margin-top: 100px;
   background-color: transparent;
   border-color: transparent;
   cursor: pointer;
+}
+.frog:focus {
+  outline: none;
+  -webkit-tap-highlight-color: transparent  ;
 }
 .resetButtonA{
   position: absolute;
